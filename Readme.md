@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Денис Тухватуллин](https://up.htmlacademy.ru/adaptive/15/user/244335).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Селиванов](https://htmlacademy.ru/profile/dmitrii_selivanov)
 
 ---
 
