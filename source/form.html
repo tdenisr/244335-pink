@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">PINK</a>
+      <nav class="main-nav main-header__nav">
+        <button type="button" class="main-nav__menu-btn">Меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="competition.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;ACADEMY</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-content ">
+      <section class="competition">
+        <h1 class="competition__header">Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк</h1>
+        <p class="competition__introduction">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <form class="competition__form form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="form__fio form__fio--last-name">
+            <label class="form__label" for="last-name">Фамилия:</label>
+            <input type="text" id="last-name" placeholder="Укажите фамилию *">
+          </p>
+          <p class="form__fio form__fio--first-name">
+            <label class="form__label" for="first-name">Имя:</label>
+            <input type="text" id="first-name" placeholder="Введите ваше имя *">
+          </p>
+          <p class="form__fio form__fio--full-name">
+            <label class="form__label" for="full-name">Отчество:</label>
+            <input type="text" id="full-name" placeholder="Ну и отчество тоже">
+          </p>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+            <label class="form__achievement-label" for="selfie">
+              <input type="checkbox" class="form__achievement" name="selfie" id="selfie" checked>
+              Сделал селфи с&nbsp;акулой
+            </label>
+            <label class="form__achievement-label" for="sunburn">
+              <input type="checkbox" class="form__achievement" name="sunburn" id="sunburn" checked>
+              Обгорела на&nbsp;пляже
+            </label>
+            <label class="form__achievement-label" for="chuck-norris">
+              <input type="checkbox" class="form__achievement" name="chuck-norris" id="chuck-norris" >
+              Видел Чака Норриса
+            </label>
+            <label class="form__achievement-label" for="souvenirs">
+              <input type="checkbox" class="form__achievement" name="souvenirs" id="souvenirs" >
+              Накупил сувениров
+            </label>
+            <label class="form__achievement-label" for="tower">
+              <input type="checkbox" class="form__achievement" name="tower" id="tower" checked>
+              Удержал башню
+            </label>
+            <label class="form__achievement-label" for="hotel-crush">
+              <input type="checkbox" class="form__achievement" name="hotel-crush" id="hotel-crush" checked>
+              Разгромил отель
+            </label>
+          </fieldset>
+          <p class="form__tel">
+            <label class="form__label" for="tel">Номер телефона</label>
+            <input type="text" id="tel" placeholder="Номер, пожалуйста">
+          </p>
+          <p class="form__email">
+            <label class="form__label" for="email">Адрес почты</label>
+            <input type="text" id="email" placeholder="Введите почту *">
+          </p>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">С каким приложением путешествовали?</legend>
+            <label class="form__achievement-label" for="ios">
+              <input type="radio" class="form__achievement" name="os" id="ios" checked>
+              Pink для iOS
+            </label>
+            <label class="form__achievement-label" for="android">
+              <input type="radio" class="form__achievement" name="os" id="android" checked>
+              Pink на Android
+            </label>
+            <label class="form__achievement-label" for="windows-phone">
+              <input type="radio" class="form__achievement" name="os" id="windows-phone" >
+              Windows Phone
+            </label>
+          </fieldset>
+          <p class="form__user-text">
+            <label class="form__label" for="user-text">Опишите свои эмоции</label>
+            <textarea id="user-text" name="user-text" rows="10" cols="20">Можно прям в&nbsp;красках, не&nbsp;стесняясь в&nbsp;выражениях</textarea>
+          </p>
+          <button type="submit" class="form__btn submit-btn">Отправить форму</button>
+          <span class="form__notice">*-Обязательные поля</span>
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <a class="main-footer__logo" href="index.html">PINK</a>
+      <ul class="social-links">
+        <li class="social-links__item">
+          <a class="social-links__link social-links__link--tw" href="https://twitter.com/">Мы в twitter</a>
+        </li>
+        <li class="social-links__item">
+          <a class="social-links__link social-links__link--fb" href="https://www.facebook.com/">Мы в facebook</a>
+        </li>
+        <li class="social-links__item">
+          <a class="social-links__link social-links__link--fb" href="https://www.youtube.com/">Мы в youtube</a>
+        </li>
+      </ul>
+      <p class="main-footer__copyright copyright">Разработано
+      <a class="copyright__link" href="https://htmlacademy.ru/">HTML academy</a></p>
+    </footer>
+  </body>
+</html>
