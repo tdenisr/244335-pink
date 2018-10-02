@@ -5,8 +5,146 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="main-header">
+      <a class="main-header__logo">PINK</a>
+      <nav class="main-nav main-header__nav">
+        <button type="button" class="main-nav__menu-btn">Меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="competition.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;ACADEMY</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="vissually-hidden">PINK-приложение для поднятия настроения</h1>
+      <img class="demo-photo" src="http://placehold.it/320x369" width="320" height="396" alt="Взгляните на жизнь иначе!">
+      <div class="download">
+        <a class="btn download__btn" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+        <ul class="download__list store-links">
+          <li class="store-links__item">
+            <a class="store-links__link store-links__link--apple" href="https://www.apple.com/ru/ios/app-store/">app-store</a>
+          </li>
+          <li class="store-links__item">
+            <a class="store-links__link store-links__link--google" href="https://play.google.com/store">google play store</a>
+          </li>
+          <li class="store-links__item">
+            <a class="store-links__link store-links__link--windows" href="https://www.microsoft.com/ru-ru/store">windows store</a>
+          </li>
+        </ul>
+        <p class="download__notice">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+      <section class="features">
+        <h2 class="features__header vissually-hidden">Особенности приложения</h2>
+        <p class="features__promo">Устали от серости мегаполиса?</p>
+        <p class="features__promo">Нам есть, что вам предложить!</p>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__name">Поднимает настроение</h3>
+            <p class="features__description">Приложение позволит вам победить осеннюю хандру и&nbsp;депрессию буквально в&nbsp;несколько кликов!</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__name">Меняет мир вокруг</h3>
+            <p class="features__description">Сделайте снимок и&nbsp;украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__name">Заводит новых друзей</h3>
+            <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с&nbsp;друзьями и&nbsp;заводите новых</p>
+          </li>
+        </ul>
+        <img class="features__screen" src="http://placehold.it/157x320" alt="Скриншот экрана" width="157" height="320">
+      </section>
+      <section class="comments">
+        <h2 class="comments__header vissually-hidden">Отзывы пользователей</h2>
+        <ul class="comments__list">
+          <li class="comments__item">
+            <p class="comments__author">Николай Петров</p>
+            <p class="comments__text">&quot;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!</p>
+          </li>
+          <li class="comments__item">
+            <p class="comments__author">Николай Петров</p>
+            <p class="comments__text">&quot;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!</p>
+          </li>
+          <li class="comments__item">
+            <p class="comments__author">Николай Петров</p>
+            <p class="comments__text">&quot;Это приложение перевернуло мой мир и&nbsp;позволило по-новому взглянуть на&nbsp;привычные серые вещи! А&nbsp;еще я&nbsp;познакомился со&nbsp;своей будущей женой в&nbsp;комментариях к&nbsp;выложенной фотографии!</p>
+          </li>
+        </ul>
+        <div class="comments__switches slider-switches">
+          <button class="slider-switches__switch" type="button">1</button>
+          <button class="slider-switches__switch" type="button">2</button>
+          <button class="slider-switches__switch" type="button">3</button>
+        </div>
+      </section>
+      <section class="price">
+        <h2 class="price__header vissually-hidden">Тарифы и стоимость</h2>
+        <table class="price__table">
+          <thead>
+            <tr class="price__tariff">
+              <th colspan=2 class="price__header price__header--hit">
+                <p class="price__tariff-name">Стандарт</p><p class="price__tariff-cost">3,99 USD</p>
+              </th>
+              <th colspan=2 class="price__header">
+                <p class="price__tariff-name">Стандарт</p><p class="price__tariff-cost">3,99 USD</p></th>
+              <th colspan=2 class="price__header">
+                <p class="price__tariff-name">Стандарт</p><p class="price__tariff-cost">3,99 USD</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="price__filter">
+              <td class="price__feature">Розовый фильтр</td>
+              <td class="price__included price__included--on">Да</td>
+              <td class="price__feature">Розовый фильтр</td>
+              <td class="price__included price__included--on">Да</td>
+              <td class="price__feature">Розовый фильтр</td>
+              <td class="price__included price__included--on">Да</td>
+            </tr>
+            <tr class="price__filter">
+              <td class="price__feature">Смайлики</td>
+              <td class="price__included price__included--off">Нет</td>
+              <td class="price__feature">Смайлики</td>
+              <td class="price__included price__included--on">Да</td>
+              <td class="price__feature">Смайлики</td>
+              <td class="price__included price__included--on">Да</td>
+            </tr>
+            <tr class="price__filter">
+              <td class="price__feature">Комментарии</td>
+              <td class="price__included price__included--off">Нет</td>
+              <td class="price__feature">Комментарии</td>
+              <td class="price__included price__included--off">Нет</td>
+              <td class="price__feature">Комментарии</td>
+              <td class="price__included price__included--on">Да</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="price__switches slider-switches">
+          <button class="slider-switches__switch" type="button">1</button>
+          <button class="slider-switches__switch" type="button">2</button>
+          <button class="slider-switches__switch" type="button">3</button>
+        </div>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__header vissually-hidden">Наши контакты</h2>
+        <p>Остались вопросы?<br>Свяжитесь с нами!</p>
+        <ul class="contacts__list">
+          <li class="contacts__item"><p><b>Звоните:</b><span class="contacts__number">+7(812)555-66-66</span></p></li>
+          <li class="contacts__item"><p><b>Пишите:</b><span class="contacts__number">mail@htmlacademy.ru</span></p></li>
+          <li class="contacts__item"><p><b>Приезжайте в гости:</b><span class="contacts__number">ул. Большая Конюшенная, 19/8</span></p></li>
+        </ul>
+        <div class="contacts__map">
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0907991d519d20fa991e2e5ee063e4b184eaae7d1d9c5721038ccb239c5762c5&amp;width=100%25&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
