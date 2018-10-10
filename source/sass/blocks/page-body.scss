@@ -1,0 +1,9 @@
+.page-body {
+  width: $body-mobile-width;
+
+  @include reset-margin-padding;
+  font-size: $fonts-size;
+  font-family: $fonts-family;
+  line-height: $fonts-line-hieght;
+  color: $fonts-color;
+}

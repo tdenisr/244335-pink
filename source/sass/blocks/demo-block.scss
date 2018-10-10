@@ -1,0 +1,18 @@
+.demo-block {
+  display: flex;
+  position: relative;
+  margin-top: -80px;
+  z-index: -1;
+  width: $body-mobile-width;
+  height: 462px;
+  background-color: $background-color-dark;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.demo-block__photo {
+  width: 258px;
+  height: 286px;
+  margin-top: auto;
+}

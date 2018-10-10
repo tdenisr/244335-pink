@@ -1,0 +1,31 @@
+.store-links {
+  @include reset_list;
+  display: flex;
+  justify-content: space-between;
+}
+
+.store-links__item {
+  width: 47px;
+  height: 56px;
+}
+
+.store-links__link {
+  display: flex;
+
+  @include link;
+  font-size: 0;
+  width: 47px;
+  height: 56px;
+}
+
+.store-links__link svg {
+  margin: auto;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
