@@ -2,6 +2,8 @@
   width: $body-mobile-width;
 
   @include reset-margin-padding;
+  margin-right: auto;
+  margin-left: auto;
   font-size: $fonts-size;
   font-family: $fonts-family;
   line-height: $fonts-line-hieght;

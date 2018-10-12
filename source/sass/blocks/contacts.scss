@@ -1,0 +1,25 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts__list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts__item p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts__number {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: #d22856
+}
