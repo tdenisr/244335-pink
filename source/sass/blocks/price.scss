@@ -23,6 +23,7 @@
 .price__header {
   width: 280px;
   border: 2px solid #f2f2f2;
+
   &--hit {
     position: relative;
 
@@ -37,7 +38,7 @@
     }
 
     &::after {
-      content:"Хит";
+      content: "Хит";
       transform: rotate(315deg);
       text-align: center;
       position: absolute;
@@ -72,6 +73,7 @@
   color: #283645;
   border: 2px solid #f2f2f2;
 }
+
 .price__feature {
   padding-left: 21px;
   padding-top: 18px;
@@ -84,19 +86,22 @@
   vertical-align: center;
   font-size: 0;
   min-width: 41px;
+
   &--off {
-    background-image: url(../img/icon-no.svg);
+    background-image: url("../img/icon-no.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 27px 26px;
   }
+
   &--on {
-    background-image: url(../img/icon-yes.svg);
+    background-image: url("../img/icon-yes.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 31px 21px;
   }
 }
+
 .price__switches {
   margin-top: 40px;
   margin-bottom: 46px;
