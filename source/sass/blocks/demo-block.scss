@@ -9,6 +9,11 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  &--inner-page {
+    position: absolute;
+    height: 240px;
+  }
 }
 
 .demo-block__photo {

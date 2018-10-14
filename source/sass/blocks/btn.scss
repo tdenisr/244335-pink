@@ -1,8 +1,6 @@
 .btn {
   @include link;
-  border: solid 3px #ffffff;
   border-radius: 28px;
-  color: #ffffff;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.4;
@@ -12,12 +10,48 @@
   padding-right: 32px;
   background: transparent;
 
-  &:hover {
-    color: #d22856;
-    background-color: #ffffff;
+  &--white {
+    color: #ffffff;
+    border: solid 3px #ffffff;
+
+    &:hover {
+      color: #d22856;
+      background-color: #ffffff;
+    }
+
+    &:active {
+      color: rgba(210, 40, 86, 0.3);
+    }
   }
 
-  &:active {
-    color: rgba(210, 40, 86, 0.3);
+  &--pink {
+    color: #d22856;
+    border: solid 3px #d22856;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #d22856;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--grey {
+    color: #283645;
+    border: solid 3px #283645;
+    opacity: 0.1;
+
+    &:hover {
+      color: #283645;
+      opacity: 0.3;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      border: solid 3px rgba(40, 54, 69, 0.3);
+      background-color: rgba(40, 54, 69, 0.3);
+    }
   }
 }

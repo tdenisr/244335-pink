@@ -1,0 +1,13 @@
+.logo-glasses {
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.logo-glasses:hover g path {
+  fill: #d22856;
+}

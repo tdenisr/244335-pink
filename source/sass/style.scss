@@ -1,3 +1,20 @@
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans"), url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-Bold"), url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-Light"), url("../fonts/opensanslight.woff") format("woff"), url("../fonts/opensanslight.woff2") format("woff2");
+  font-weight: 300;
+}
 
 @import "node_modules/normalize.scss/normalize.scss"; // подключаем normalize
 @import "variables.scss"; //подключаем переменные
@@ -15,3 +32,12 @@
 @import "blocks/slider-switches.scss";
 @import "blocks/price.scss";
 @import "blocks/contacts.scss";
+@import "blocks/users-photo.scss";
+@import "blocks/post.scss";
+@import "blocks/like.scss";
+@import "blocks/new-post.scss";
+@import "blocks/edit-tools.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/social-links.scss";
+@import "blocks/logo-glasses.scss";
+@import "blocks/copyright.scss";

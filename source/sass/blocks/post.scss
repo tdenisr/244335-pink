@@ -1,0 +1,83 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  &--top {
+    position: relative;
+
+    &::before {
+      content: "Панорама дня";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 20px;
+      width: 140px;
+      height: 36px;
+      font-size: 12px;
+      line-height: 3;
+      font-weight: 700;
+      color: #ffffff;
+      background-color: #d22856;
+      text-align: center;
+      text-transform: uppercase;
+      z-index: 2;
+    }
+  }
+}
+
+.post__photo-full-version {
+  @include reset-margin-padding;
+  font-size: 0;
+}
+
+.post__photo {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 280px;
+
+  &--top {
+    @include reset-margin-padding;
+    width: 100%;
+    position: relative;
+  }
+}
+
+
+.post__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 246px;
+  padding-left: 17px;
+  padding-top: 20px;
+  padding-right: 17px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  color: #283645;
+  background-color: $background-color-light;
+}
+
+.post__user {
+  @include reset-margin-padding;
+  line-height: 1.7;
+}
+
+.post__time {
+  @include reset-margin-padding;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.post__text {
+  @include reset-margin-padding;
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+.post__likes {
+  @include reset-margin-padding;
+}

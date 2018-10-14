@@ -1,7 +1,11 @@
 .main-header {
   padding: 0;
 
-  @include background-dark();
+  @include background-dark;
+
+  &--close {
+    background-color: rgba(40, 54, 69, 0.3);
+  }
 }
 
 .main-header__top {
@@ -41,5 +45,11 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+.main-header__nav {
+  &--close {
+    display: none;
   }
 }

@@ -1,0 +1,24 @@
+.like {
+  color: #d22856;
+  font-size: 12px;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+.like__add {
+  @include reset-btn;
+  padding-right: 19px;
+  fill: #d22856;
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.like__count {
+  margin-left: 4px;
+}

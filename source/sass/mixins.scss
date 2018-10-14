@@ -1,9 +1,9 @@
-@mixin reset-margin-padding() {
+@mixin reset-margin-padding {
   margin: 0;
   padding: 0;
 }
 
-@mixin background-dark() {
+@mixin background-dark {
   background-color: $background-color-dark;
   color: #ffffff;
 }

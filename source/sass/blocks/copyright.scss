@@ -1,0 +1,24 @@
+.copyright {
+  display: block;
+  height: 40px;
+  text-align: center;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.copyright a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.copyright svg {
+  fill: #d22856;
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

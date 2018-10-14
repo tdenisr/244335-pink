@@ -1,0 +1,35 @@
+.new-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+  padding-bottom: 28px;
+  background-color: $background-color-light;
+  color: #283645;
+  margin-bottom: 40px;
+}
+
+.new-post__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.new-post__photo {
+  margin-bottom: 40px;
+}
+
+.new-post__tools {
+  padding-bottom: 65px;
+  border-bottom: 1px solid rgba(40, 54, 69, 0.3);
+  margin-bottom: 38px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.new-post__btn {
+  width: 280px;
+  margin-bottom: 12px;
+}
