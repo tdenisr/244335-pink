@@ -1,0 +1,129 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 21px;
+  padding-right: 21px;
+}
+
+.form__user-name {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.form__label {
+  margin-left: 24px;
+  margin-bottom: 3px;
+  font-size: 14px;
+  line-height: 2.14;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.form__input-text {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #283645;
+  border: solid 2px rgba(40, 54, 69, 0.3);
+
+  &::placeholder {
+    color: #283645;
+  }
+
+  &:hover {
+    border: solid 2px rgba(40, 54, 69, 1);
+  }
+
+  &:active {
+    border: solid 2px rgba(210, 40, 86, 1);
+  }
+
+  &:focus {
+    border: solid 2px rgba(210, 40, 86, 1);
+  }
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 120px;
+  font-size: 18px;
+  line-height: 1.67;
+  border-color: transparent;
+  background-color: $background-color-light;
+}
+
+.form__legend {
+  @include reset-margin-padding;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
+  line-height: 2.14;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form__list {
+  display: flex;
+  flex-direction: column;
+
+  @include reset-list;
+}
+
+.form__achievement-label {
+  position: relative;
+  padding-left: 55px;
+  height: 37px;
+  line-height: 37px;
+
+  &::before {
+    @include pseudo-element;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgba(40, 54, 69, 0.3);
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 22px;
+    height: 16px;
+    background-image: url("../img/icon-yes-red.svg");
+  }
+
+  &:hover {
+    &::before {
+      border: 2px solid rgba(40, 54, 69, 1);
+    }
+  }
+
+  &:active {
+    &::before {
+      border: 2px solid rgba(210, 40, 86, 1);
+    }
+  }
+}
+
+.form__achievement:checked + .form__achievement-label::after {
+  display: inline-block;
+}
