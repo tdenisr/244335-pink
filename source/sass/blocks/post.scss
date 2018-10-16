@@ -28,7 +28,6 @@
 }
 
 .post__photo-full-version {
-  @include reset-margin-padding;
   font-size: 0;
 }
 
@@ -38,7 +37,8 @@
   width: 280px;
 
   &--top {
-    @include reset-margin-padding;
+    margin-left: 0;
+    margin-right: 0;
     width: 100%;
     position: relative;
   }
@@ -60,12 +60,12 @@
 }
 
 .post__user {
-  @include reset-margin-padding;
+  margin-top: 0;
+  margin-bottom: 0;
   line-height: 1.7;
 }
 
 .post__time {
-  @include reset-margin-padding;
   font-weight: 300;
   text-transform: uppercase;
   font-size: 12px;
@@ -73,11 +73,12 @@
 }
 
 .post__text {
-  @include reset-margin-padding;
+  margin-top: 3px;
   margin-bottom: 10px;
   line-height: 1.7;
 }
 
 .post__likes {
-  @include reset-margin-padding;
+  margin-top: 0;
+  margin-bottom: 0;
 }

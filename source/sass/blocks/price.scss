@@ -86,18 +86,16 @@
   vertical-align: center;
   font-size: 0;
   min-width: 41px;
+  background-repeat: no-repeat;
+  background-position: center;
 
   &--off {
     background-image: url("../img/icon-no.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: 27px 26px;
   }
 
   &--on {
     background-image: url("../img/icon-yes.svg");
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: 31px 21px;
   }
 }

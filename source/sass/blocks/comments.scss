@@ -31,20 +31,6 @@
   justify-content: flex-start;
 }
 
-.comments__author {
-  padding: 0;
-  margin-top: 35px;
-  margin-bottom: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.67;
-}
-
-.comments__text {
-  @include reset-margin-padding;
-  text-align: center;
-}
-
 .comments__switches {
   margin-bottom: 40px;
 }
