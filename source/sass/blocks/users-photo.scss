@@ -1,0 +1,29 @@
+.users-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.users-photo__introduction {
+  text-align: center;
+  font-size: 14px;
+  line-height: 2.14;
+  margin-bottom: 40px;
+}
+
+.users-photo__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include reset-list;
+}
+
+.users-photo__invite {
+  margin-top: 7px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 2.14;
+}

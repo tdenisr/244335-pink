@@ -1,0 +1,17 @@
+.comment {
+  display: flex;
+}
+
+.comment__author {
+  padding: 0;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.67;
+}
+
+.comment__text {
+  margin: 0;
+  text-align: center;
+}

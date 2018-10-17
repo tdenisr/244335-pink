@@ -1,0 +1,57 @@
+.main-header {
+  position: relative;
+  z-index: 2;
+  padding: 0;
+
+  @include background-dark;
+
+  &--close {
+    background-color: rgba(40, 54, 69, 0.3);
+  }
+}
+
+.main-header__top {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 12px;
+  padding-top: 21px;
+}
+
+.main-header__logo {
+  margin-right: auto;
+  height: 22px;
+
+  @include link();
+
+  &:hover path {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-header__menu-btn {
+  @include reset-btn;
+
+  margin-left: auto;
+  width: 50px;
+  height: 24px;
+  font-size: 0;
+
+  &:hover path {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-header__nav {
+  &--close {
+    display: none;
+  }
+}
