@@ -103,6 +103,7 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .contacts__slogan {
     font-size: 50px;
@@ -136,6 +137,7 @@
   .contacts__map {
     width: $desktop-width;
     min-height: 500px;
+
     &::before {
       border-left: $desktop-width/2 solid transparent;
       border-right: $desktop-width/2 solid transparent;
