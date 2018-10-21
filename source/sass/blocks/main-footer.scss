@@ -18,3 +18,21 @@
   margin-top: 0;
   margin-bottom: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    padding-left: 130px;
+    padding-right: 130px;
+    margin-top: 78px;
+  }
+}

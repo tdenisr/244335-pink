@@ -3,17 +3,17 @@
   color: #ffffff;
 }
 
-@mixin link {
+@mixin link ($link-color: #ffffff, $hover-color: #d22856) {
   text-decoration: none;
-  color: #ffffff;
+  color: $link-color;
 
   &:hover {
-    color: #d22856;
-    fill: #d22856;
+    color: $hover-color;
+    fill: $hover-color;
   }
 
   &:active {
-    color: rgba(210, 40, 86, 0.3);
+    color: rgba($hover-color, 0.3);
   }
 }
 

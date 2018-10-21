@@ -1,7 +1,8 @@
 .store-links {
-  @include reset_list;
   display: flex;
   justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
 }
 
 .store-links__item {

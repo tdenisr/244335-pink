@@ -21,3 +21,9 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    font-size: 18px;
+  }
+}

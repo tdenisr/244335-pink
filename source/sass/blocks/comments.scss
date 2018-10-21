@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
 
   &::after {
     @include pseudo-element;
@@ -10,7 +11,7 @@
     height: 0;
     margin-top: auto;
     border-bottom: 30px solid $background-color-light;
-    border-left: $body-mobile-width solid transparent;
+    border-left: $mobile-width solid transparent;
   }
 }
 
@@ -19,7 +20,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 34px;
 
   @include reset-list;
 }
@@ -29,8 +29,70 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 25px;
 }
 
 .comments__switches {
   margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .comments {
+    &::after {
+      border-bottom: $tablet-width/12 solid $background-color-light;
+      border-left: $tablet-width solid transparent;
+    }
+  }
+
+  .comments__list {
+    margin-bottom: 0;
+  }
+
+  .comments__item {
+    padding-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .comments__switches {
+    margin-bottom: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comments {
+    &::after {
+      border-bottom: $desktop-width/15 solid $background-color-light;
+      border-left: $desktop-width solid transparent;
+    }
+  }
+
+  .comments__list {
+    position: relative;
+    padding-top: 170px;
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: 13px;
+
+    &::before {
+      @include pseudo-element;
+      position: absolute;
+      top: 50px;
+      width: 75px;
+      height: 63px;
+      background-image: url("../img/icon-quotes.svg");
+    }
+  }
+
+  .comments__item {
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
+  }
+
+  .comments__switches {
+    top: 0;
+  }
 }
