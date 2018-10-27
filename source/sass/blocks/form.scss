@@ -3,6 +3,11 @@
   flex-direction: column;
 }
 
+.form__user-name {
+  display: flex;
+  flex-direction: column;
+}
+
 .form__text-field {
   display: flex;
   flex-direction: column;
@@ -165,7 +170,13 @@
 }
 
 .form__contacts {
+  position: relative;
   padding-top: 33px;
+  border: none;
+}
+
+.form__contacts > .form__legend {
+  display: none;
 }
 
 .form__user-text {
@@ -187,18 +198,264 @@
   line-height: 1.67;
 }
 
+.form__btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form__btn {
   margin-bottom: 37px;
 }
 
 .form__notice {
   display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 55px;
   text-transform: uppercase;
 
   sup {
     color: #d4345f;
+  }
+}
+
+.form__notice-detail {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form__text-field {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 52px;
+    flex-direction: row;
+    align-items: center;
+    order: 1;
+
+    &--contacts {
+      flex-direction: column-reverse;
+      align-items: stretch;
+      position: relative;
+
+      &::before {
+        @include pseudo-element;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        width: 60px;
+        height: 58px;
+        background-color: #e5e5e5;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &--telephone {
+      margin-bottom: 30px;
+
+      &::before {
+        background-image: url("../img/icon-phone.svg");
+      }
+    }
+
+    &--email {
+      margin-bottom: 9px;
+
+      &::before {
+        background-image: url("../img/icon-mail.svg");
+      }
+    }
+  }
+
+  .form__label {
+    margin-left: 0;
+    margin-right: 20px;
+
+    &--contacts {
+      margin-left: 18px;
+    }
+  }
+
+  .form__input-text {
+    flex-grow: 1;
+  }
+
+  .form__input-contacts {
+    margin-bottom: 10px;
+    padding-right: 70px;
+  }
+
+
+  .form__fieldset {
+    background-color: transparent;
+    border: 2px solid #e5e5e5;
+    padding-top: 38px;
+
+    &--achievement {
+      order: 4;
+      padding-bottom: 3px;
+      padding-left: 60px;
+      margin-bottom: 48px;
+    }
+
+    &--app {
+      order: 2;
+      margin-top: 5px;
+      margin-bottom: 58px;
+      padding-left: 55px;
+      padding-bottom: 15px;
+    }
+  }
+
+  .form__checkbox-radio-label {
+    padding-left: 60px;
+  }
+
+  .form__legend {
+    position: static;
+  }
+
+  .form__contacts {
+    order: 3;
+    border: 2px solid #e5e5e5;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 32px;
+    padding-left: 60px;
+    padding-top: 37px;
+    padding-right: 60px;
+  }
+
+  .form__contacts > .form__legend {
+    display: block;
+  }
+
+  .form__user-text {
+    order: 5;
+    position: relative;
+    padding-top: 0;
+    border: 2px solid #e5e5e5;
+    padding-bottom: 50px;
+    margin-bottom: 65px;
+  }
+
+  .form__label--textarea {
+    position: relative;
+    top: -15px;
+    display: inline-block;
+    background-color: $background-color-white;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 15px;
+  }
+
+  .form__textarea {
+    width: 456px;
+    min-height: 175px;
+  }
+
+  .form__btn-wrapper {
+    order: 6;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 17px;
+  }
+
+  .form__btn {
+    width: 296px;
+  }
+
+  .form__notice {
+    padding-top: 14px;
+    font-size: 14px;
+    line-height: 2.14;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__user-name {
+    padding-top: 15px;
+  }
+
+  .form__fieldset {
+    &--app {
+      margin-top: 0;
+      width: 358px;
+      padding-left: 75px;
+      padding-right: 0;
+    }
+
+    &--achievement {
+      width: 100%;
+      padding-right: 60px;
+      padding-bottom: 10px;
+    }
+  }
+
+  .form__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__text-field {
+    width: 435px;
+
+    &--contacts {
+      width: 371px;
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .form__contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+  }
+
+  .form__fieldset-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .form__user-text {
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+  }
+
+  .form__textarea {
+    width: 778px;
+    min-height: 108px;
+  }
+
+  .form__btn-wrapper {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .form__btn {
+    margin-bottom: 0;
+  }
+
+  .form__notice {
+    margin-bottom: 0;
+  }
+
+  .form__notice-detail {
+    display: inline;
   }
 }

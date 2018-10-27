@@ -11,8 +11,9 @@
   background-size: auto 462px;
 
   &--inner-page {
-    min-height: 240px;
-    margin-bottom: 44px;
+    min-height: 169px;
+    margin-bottom: 32px;
+    justify-content: flex-start;
   }
 }
 
@@ -37,6 +38,10 @@
   font-weight: 300;
   color: #ffffff;
   background-color: transparent;
+
+  &--inner-page {
+    padding-top: 10px;
+  }
 }
 
 
@@ -73,6 +78,12 @@
     flex-shrink: 0;
     background-color: transparent;
   }
+
+  .header-block__header {
+    font-size: 50px;
+    padding-top: 35px;
+    line-height: 1.2;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -81,6 +92,10 @@
     padding-right: 130px;
     padding-left: 130px;
     padding-top: 150px;
+
+    &--inner-page {
+      min-height: 243px;
+    }
   }
 
   .header-block__photo {
@@ -91,5 +106,18 @@
 
   .header-block__download {
     margin-top: 40px;
+  }
+
+  .header-block__header {
+    margin-top: 19px;
+    padding-top: 0;
+    line-height: 1.2;
+    padding-right: 80px;
+    padding-left: 80px;
+
+    &--photo {
+      padding-right: 200px;
+      padding-left: 200px;
+    }
   }
 }
