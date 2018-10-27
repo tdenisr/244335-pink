@@ -1,0 +1,94 @@
+.research {
+  display: none;
+  background-color: $background-color-light;
+}
+
+@media (min-width: $tablet-width) {
+  .research {
+    display: block;
+    position: relative;
+    padding-left: 330px;
+    padding-bottom: 100px;
+    padding-top: 70px;
+    text-align: left;
+
+    &::before {
+      @include pseudo-element;
+      position: absolute;
+      top: 59px;
+      left: 23px;
+      width: 238px;
+      height: 276px;
+      background-image: url("../img/icon-timer.svg");
+      background-size: 100% 100%;
+    }
+
+    &::after {
+      content: "24";
+      position: absolute;
+      top: 59px;
+      left: 23px;
+      width: 238px;
+      height: 276px;
+      padding-top: 54px;
+      font-size: 96px;
+      line-height: 202px;
+      color: #d22856;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+
+  .research__header {
+    padding-right: 80px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .research__description {
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  .research__details {
+    @include link (#d22856, #283645);
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .research {
+    padding-top: 91px;
+    padding-left: 495px;
+    padding-bottom: 110px;
+
+    &::before {
+      top: 25px;
+      left: 130px;
+      width: 298px;
+      height: 345px;
+    }
+
+    &::after {
+      top: 59px;
+      left: 160px;
+      font-size: 120px;
+    }
+  }
+
+  .research__description {
+    margin-top: 23px;
+    margin-bottom: 27px;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+
+  .research__details {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}

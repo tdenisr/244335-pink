@@ -4,14 +4,51 @@
 
 .comment__author {
   padding: 0;
-  margin-top: 35px;
+  margin-top: 15px;
   margin-bottom: 15px;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.67;
+}
+
+.comment__about-author {
+  display: none;
 }
 
 .comment__text {
   margin: 0;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .comment__author {
+    order: 2;
+    margin-top: 33px;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  .comment__about-author {
+    display: block;
+    order: 3;
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 2.14;
+  }
+
+  .comment__text {
+    order: 1;
+    line-height: 1.67;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment__author {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .comment__about-author {
+    font-size: 18px;
+  }
 }

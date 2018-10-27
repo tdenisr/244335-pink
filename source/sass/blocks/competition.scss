@@ -13,4 +13,53 @@
   text-align: center;
   font-size: 14px;
   line-height: 2.14;
+
+  &--secondary {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .competition__introduction {
+    margin-top: 63px;
+    margin-bottom: 0;
+    font-size: 18px;
+    padding-left: 60px;
+    padding-right: 60px;
+    line-height: 1.67;
+
+    &--secondary {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 45px;
+    }
+  }
+
+  .competition__form {
+    width: $tablet-width - 20px - 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 26px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition__introduction {
+    margin-top: 60px;
+    margin-bottom: 52px;
+    padding-left: 190px;
+    padding-right: 190px;
+
+    &--secondary {
+      display: inline;
+      padding: 0;
+    }
+  }
+
+  .competition__form {
+    width: $desktop-width - 130px - 130px;
+    margin-left: 130px;
+    margin-right: 130px;
+    padding-top: 18px;
+  }
 }

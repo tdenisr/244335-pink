@@ -22,3 +22,18 @@
 .like__count {
   margin-left: 4px;
 }
+
+@media (min-width: $tablet-width) {
+  .like {
+    &:not(&--top) {
+      display: flex;
+      width: 100%;
+    }
+  }
+
+  .like__add {
+    margin-left: auto;
+    padding-right: 15px;
+    order: 2;
+  }
+}

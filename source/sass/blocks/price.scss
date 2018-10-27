@@ -10,7 +10,7 @@
   margin-top: 60px;
   margin-left: -252px;
   margin-right: -252px;
-  border: 2px solid #ffffff;
+  border: 2px solid #e5e5e5;
   border-collapse: collapse;
   text-transform: uppercase;
 }
@@ -51,16 +51,18 @@
 }
 
 .price__tariff-name {
-  margin-top: 15px;
-  margin-bottom: 5px;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 5px;
   font-size: 18px;
   font-weight: 400px;
   line-height: 30px;
 }
 
 .price__tariff-cost {
-  margin-top: 5px;
-  margin-bottom: 15px;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 15px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
@@ -71,14 +73,14 @@
   font-size: 14px;
   line-height: 2.14;
   color: #283645;
-  border: 2px solid #f2f2f2;
+  border: 2px solid #e5e5e5;
 }
 
 .price__feature {
   padding-left: 21px;
   padding-top: 18px;
   padding-bottom: 14px;
-  border-left: 2px solid #f2f2f2;
+  border-left: 2px solid #e5e5e5;
 }
 
 .price__included {
@@ -103,4 +105,170 @@
 .price__switches {
   margin-top: 40px;
   margin-bottom: 46px;
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 70px;
+  }
+
+  .price__table {
+    width: 620px;
+    margin-top: 37px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .price__header {
+    width: 152px;
+
+    &:first-child {
+      background-color: $background-color-light;
+
+      .price__tariff-name {
+        margin-left: 154px;
+        background-color: $background-color-dark;
+      }
+
+      .price__tariff-cost {
+        margin-left: 154px;
+        background-color: $background-color-dark;
+      }
+    }
+
+    &--hit {
+      width: 155px;
+
+      &::before {
+        width: 61px;
+        height: 61px;
+        background-image: url("../img/bg-hit-tablet.svg");
+      }
+
+      &::after {
+        top: 0;
+        left: 0;
+        width: 61px;
+        height: 61px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .price__tariff-name {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+
+  .price__tariff-cost {
+    font-size: 18px;
+    padding-bottom: 10px;
+    padding-top: 0;
+  }
+
+  .price__feature {
+    text-transform: none;
+
+    &:first-child {
+      width: 139px;
+      padding-left: 15px;
+      padding-top: 7px;
+      padding-bottom: 8px;
+      border: 2px solid #e5e5e5;
+    }
+
+    &:not(:first-child) {
+      font-size: 0;
+      width: 0;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .price__included {
+    width: 154px;
+  }
+
+  .price__switches {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 95px;
+  }
+
+  .price__table {
+    width: 940px;
+    margin-top: 63px;
+  }
+
+  .price__header {
+    width: 233px;
+
+    &:first-child {
+      .price__tariff-name {
+        margin-left: 233px;
+      }
+
+      .price__tariff-cost {
+        margin-left: 233px;
+      }
+    }
+
+    &--hit {
+      width: 236px;
+
+      &::before {
+        width: 74px;
+        height: 73px;
+        background-image: url("../img/bg-hit.svg");
+      }
+
+      &::after {
+        top: 5px;
+        left: 5px;
+        width: 61px;
+        height: 61px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .price__tariff-name {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .price__tariff-cost {
+    font-size: 24px;
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+
+  .price__feature {
+    text-transform: none;
+
+    &:first-child {
+      width: 211px;
+      padding-left: 23px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 18px;
+    }
+  }
+
+  .price__included {
+    width: 234px;
+  }
 }

@@ -1,9 +1,30 @@
 .page-body {
-  width: $body-mobile-width;
+  width: $mobile-width;
   margin-right: auto;
   margin-left: auto;
   font-size: $fonts-size;
   font-family: $fonts-family;
   line-height: $fonts-line-height;
   color: $fonts-color;
+}
+
+@media (max-width: $tablet-width) {
+  .page-body--index {
+    .main-footer {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-body {
+    width: $tablet-width;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-body {
+    width: $desktop-width;
+  }
 }

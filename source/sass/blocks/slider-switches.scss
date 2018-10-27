@@ -1,31 +1,76 @@
-.slider-switches {
-  min-width: 80px;
-  display: flex;
-  justify-content: space-around;
+@media (max-width: $desktop-width) {
+  .slider-switches {
+    min-width: 80px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .slider-switches__switch {
+    width: 12px;
+    height: 12px;
+
+    @include reset-btn;
+    font-size: 0;
+    opacity: 0.3;
+    background-color: #283645;
+    border: solid 3px #ffffff;
+    border-radius: 50%;
+
+    &--active {
+      background-color: transparent;
+      border-color: #283645;
+      opacity: 1;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
+  }
 }
 
-.slider-switches__switch {
-  width: 12px;
-  height: 12px;
-
-  @include reset-btn;
-  font-size: 0;
-  opacity: 0.3;
-  background-color: #283645;
-  border: solid 3px #ffffff;
-  border-radius: 50%;
-
-  &--active {
-    background-color: transparent;
-    border-color: #283645;
-    opacity: 1;
+@media (min-width: $desktop-width) {
+  .slider-switches {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
   }
 
-  &:hover {
-    opacity: 0.6;
-  }
+  .slider-switches__switch {
+    position: absolute;
+    width: 22px;
+    height: 41px;
 
-  &:active {
-    opacity: 0.1;
+    @include reset-btn;
+    font-size: 0;
+    opacity: 0.3;
+
+    &:first-child {
+      left: 130px;
+      top: 45%;
+      background-image: url("../img/icon-review-arrow-left.svg");
+    }
+
+    &:last-child {
+      right: 130px;
+      top: 45%;
+      background-image: url("../img/icon-review-arrow-right.svg");
+    }
+
+    &--active {
+      display: none;
+    }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 }
