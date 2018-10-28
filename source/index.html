@@ -14,7 +14,7 @@
       svg4everybody(); // run it now or whenever you are ready
     </script>
   </head>
-  <body class="page-body page-body--index no-js">
+  <body class="page-body page-body--index no-js">  <!--заменить класс на "js" с помощью js -->
     <svg style="display:none">
       <symbol class="logo-icon"  viewBox="0 0 146.3 40.375" id="main-logo">
         <g class="logo-icon__text">
@@ -72,7 +72,7 @@
         <path fill="#A4C639" d="M8.03,11.967h26.026c-0.039-2.783-1.234-5.322-3.187-7.275l2.446-4.235c0.082-0.146,0.031-0.331-0.112-0.415 c-0.146-0.084-0.331-0.034-0.415,0.111L30.416,4.26c-2.052-1.853-6.249-3.4-9.374-3.4l0,0c-3.016,0-7.322,1.547-9.374,3.4 L9.296,0.152C9.213,0.007,9.027-0.042,8.881,0.041C8.736,0.125,8.686,0.311,8.77,0.456l2.445,4.235 C9.265,6.645,8.068,9.184,8.03,11.967z M25.323,6.804c-0.002-0.805,0.664-1.46,1.488-1.462c0.826-0.002,1.494,0.648,1.498,1.454 c0,0.002,0,0.005,0,0.008c0.002,0.805-0.664,1.46-1.49,1.462c-0.823,0.002-1.493-0.649-1.496-1.454 C25.323,6.81,25.323,6.807,25.323,6.804z M14.18,6.804c-0.001-0.805,0.665-1.46,1.489-1.462c0.824-0.002,1.494,0.648,1.497,1.454 c0,0.002,0,0.005,0,0.008c0.002,0.805-0.664,1.46-1.488,1.462c-0.825,0.002-1.495-0.649-1.498-1.454 C14.18,6.81,14.18,6.807,14.18,6.804z"/>
       </symbol>
     </svg>
-    <header class="main-header">
+    <header class="main-header main-header--close"> <!--main-header--close при закрытом меню -->
       <div class="main-header__top">
         <a class="main-header__logo">
           <svg class="main-header__logo-icon" width="146.3px" height="40.375px" x="0px" y="0px">
@@ -182,11 +182,8 @@
               <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с&nbsp;друзьями и&nbsp;заводите новых</p>
             </div>
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x, img/iphone-screen-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-desktop@2x.png 2x">
-              <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-tablet@2x.png 2x">
+              <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+              <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
               <img class="features__screen" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Скриншот экрана" width="157" height="320">
             </picture>
           </li>

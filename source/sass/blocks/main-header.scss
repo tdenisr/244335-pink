@@ -6,9 +6,17 @@
   padding: 0;
 
   @include background-dark;
+}
 
-  &--close {
-    background-color: rgba(40, 54, 69, 0.6);
+.js .main-header--close {
+  background-color: rgba(#283645, 0.6);
+
+  .main-header__menu-btn {
+    display: inline-block;
+  }
+
+  .main-header__nav {
+    display: none;
   }
 }
 
