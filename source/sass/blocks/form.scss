@@ -15,6 +15,7 @@
   margin-bottom: 20px;
   margin-left: 17px;
   margin-right: 17px;
+  box-sizing: border-box;
 }
 
 .form__label {
@@ -38,6 +39,8 @@
   padding-bottom: 14px;
   font-size: 18px;
   line-height: 1.67;
+  height: 63px;
+  box-sizing: border-box;
   color: #283645;
   border: solid 2px rgba(40, 54, 69, 0.3);
 
@@ -62,23 +65,24 @@
   margin: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   position: relative;
   margin-top: 25px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 100px;
+  padding-top: 106px;
   padding-bottom: 0;
   font-size: 18px;
   line-height: 1.67;
+  text-align: left;
   border: none;
   background-color: $background-color-light;
 }
 
 .form__legend {
   position: absolute;
-  top: 35px;
+  top: 40px;
   left: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -100,6 +104,7 @@
 
 .form__item {
   margin-bottom: 45px;
+  margin-top: 0;
 
   &--radio {
     margin-bottom: 40px;
@@ -122,6 +127,7 @@
     width: 35px;
     height: 35px;
     border: 2px solid rgba(40, 54, 69, 0.3);
+    background: white;
   }
 
   &::after {
@@ -173,6 +179,10 @@
   position: relative;
   padding-top: 33px;
   border: none;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  padding-bottom: 0;
 }
 
 .form__contacts > .form__legend {
@@ -287,6 +297,7 @@
 
 
   .form__fieldset {
+    align-items: flex-start;
     background-color: transparent;
     border: 2px solid #e5e5e5;
     padding-top: 38px;
@@ -303,7 +314,7 @@
       margin-top: 5px;
       margin-bottom: 58px;
       padding-left: 55px;
-      padding-bottom: 15px;
+      padding-bottom: 10px;
     }
   }
 
@@ -324,6 +335,7 @@
     padding-left: 60px;
     padding-top: 37px;
     padding-right: 60px;
+    padding-bottom: 12px;
   }
 
   .form__contacts > .form__legend {
@@ -384,17 +396,22 @@
   }
 
   .form__fieldset {
+    position: relative;
+
     &--app {
-      margin-top: 0;
+      margin-top: 10px;
       width: 358px;
+      padding-top: 48px;
       padding-left: 75px;
       padding-right: 0;
+      margin-bottom: 65px;
     }
 
     &--achievement {
       width: 100%;
       padding-right: 60px;
       padding-bottom: 10px;
+      padding-top: 45px;
     }
   }
 
@@ -402,6 +419,28 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
+  }
+
+  .form__legend {
+    position: absolute;
+    left: 50%;
+    top: -12px;
+    background: #ffffff;
+    transform: translate(-50%, 0);
+
+    &--fix-width {
+      width: 330px;
+    }
+  }
+
+
+  .form__item {
+    margin-top: 0;
+
+    &:nth-child(2n) {
+      order: 2;
+    }
   }
 
   .form__text-field {
@@ -418,7 +457,9 @@
     width: 100%;
     display: flex;
     flex-direction: row;
+    padding-top: 45px;
     padding-bottom: 10px;
+    margin-bottom: 40px;
   }
 
   .form__fieldset-wrapper {

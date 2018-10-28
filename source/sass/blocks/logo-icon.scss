@@ -1,0 +1,29 @@
+.logo-icon__star-glasses,
+.logo-icon__istar {
+  display: none;
+}
+
+.logo-icon__glasses {
+  display: none;
+
+  &--footer {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 660px) {
+  .logo-icon__glasses {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo-icon__star-glasses,
+  .logo-icon__istar {
+    display: inline-block;
+  }
+
+  .logo-icon__glasses {
+    display: none;
+  }
+}

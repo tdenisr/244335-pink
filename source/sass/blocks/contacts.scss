@@ -51,6 +51,13 @@
   width: $mobile-width;
   min-height: 240px;
   margin-top: 0;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-size: 100% auto;
+  background-position: center center;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
   /*Треугольник над картой */
   &::before {
     position: absolute;
@@ -96,6 +103,11 @@
   .contacts__map {
     width: $tablet-width;
     min-height: 370px;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
     /*Треугольник над картой */
     &::before {
       border-left: $tablet-width/2 solid transparent;
@@ -137,6 +149,11 @@
   .contacts__map {
     width: $desktop-width;
     min-height: 500px;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
 
     &::before {
       border-left: $desktop-width/2 solid transparent;

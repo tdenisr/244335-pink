@@ -7,6 +7,9 @@
 
 .main-footer__logo {
   margin-bottom: 30px;
+
+  @include link;
+  color: $fonts-color;
 }
 
 .main-footer__links {

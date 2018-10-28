@@ -5,11 +5,16 @@
   justify-content: flex-start;
 }
 
+.users-photo__introduction-wrapper {
+  width: 100%;
+}
+
 .users-photo__introduction {
   text-align: center;
   font-size: 14px;
   line-height: 2.14;
   margin-bottom: 40px;
+  max-width: 100%;
 }
 
 .users-photo__list {
@@ -21,12 +26,19 @@
   @include reset-list;
 }
 
+.users-photo__invite-wrapper {
+  max-width: 100%;
+}
+
 .users-photo__invite {
   margin-top: 7px;
   margin-bottom: 50px;
   text-align: center;
   font-size: 14px;
   line-height: 2.14;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 100%;
 }
 
 @media (min-width: $tablet-width) {

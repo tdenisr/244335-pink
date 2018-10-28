@@ -33,6 +33,7 @@
   padding-left: 20px;
   padding-right: 20px;
   margin-bottom: 25px;
+  max-width: 300px;
 }
 
 .comments__switches {
@@ -54,6 +55,7 @@
   .comments__item {
     padding-top: 0;
     margin-bottom: 20px;
+    max-width: 620px;
   }
 
   .comments__switches {
@@ -63,6 +65,8 @@
 
 @media (min-width: $desktop-width) {
   .comments {
+    max-width: $desktop-width;
+
     &::after {
       border-bottom: $desktop-width/15 solid $background-color-light;
       border-left: $desktop-width solid transparent;
@@ -75,6 +79,8 @@
     margin-left: 130px;
     margin-right: 130px;
     margin-top: 13px;
+    max-width: 100%;
+    box-sizing: border-box;
 
     &::before {
       @include pseudo-element;
@@ -90,9 +96,12 @@
     padding-left: 100px;
     padding-right: 100px;
     position: relative;
+    max-width: 900px;
+    box-sizing: border-box;
   }
 
   .comments__switches {
-    top: 0;
+    left: 0;
+    right: 0;
   }
 }
