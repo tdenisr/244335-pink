@@ -57,7 +57,9 @@
       </div>
       <section class="users-photo">
         <h1 class="users-photo__header visually-hidden"> Опубликованные фотографии пользователей</h1>
-        <p class="users-photo__introduction">Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите, как не&nbsp;хватает ваших?</p>
+        <div class="users-photo__introduction-wrapper"> <!--flexbug in IE11 https://github.com/philipwalton/flexbugs#flexbug-2-->
+          <p class="users-photo__introduction">Взгляните на&nbsp;фотографии, которые выкладывают пользователи! Видите, как не&nbsp;хватает ваших?</p>
+        </div>
         <ul class="users-photo__list">
           <li class="users-photo__item post post--top">
             <a class="post__photo-full-version" href="#">
@@ -65,7 +67,7 @@
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
                 <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-                <img class="post__photo post__photo--top" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография пользователя">
+                <img class="post__photo post__photo--top" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Фотография пользователя">
               </picture>
             </a>
             <div class="post__content post__content--top">
@@ -222,8 +224,10 @@
             </div>
           </li>
         </ul>
-        <p class="users-photo__invite">Затмите их&nbsp;всех!<br>
-          Выкладывайте все, что накопилось в&nbsp;телефоне</p>
+        <div class="users-photo__invite-wrapper"> <!--flexbug in IE11 https://github.com/philipwalton/flexbugs#flexbug-2-->
+          <p class="users-photo__invite">Затмите их&nbsp;всех!<br>
+            Выкладывайте все, что накопилось в&nbsp;телефоне</p>
+        </div>
       </section>
       <div class="new-post">
         <form class="new-post__form" action="https://echo.htmlacademy.ru" method="post">
