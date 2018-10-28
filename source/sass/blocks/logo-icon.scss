@@ -1,7 +1,14 @@
 .logo-icon__star-glasses,
-.logo-icon__glasses,
 .logo-icon__istar {
   display: none;
+}
+
+.logo-icon__glasses {
+  display: none;
+
+  &--footer {
+    display: inline-block;
+  }
 }
 
 @media (min-width: 660px) {
