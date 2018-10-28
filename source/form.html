@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body page-body--inner no-js">
     <header class="main-header">
@@ -43,7 +43,7 @@
             <a class="main-nav__link" href="photo.html">Фотографии</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="competition.html">Конкурс</a>
+            <a class="main-nav__link">Конкурс</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" target="_blank" rel="noopener noreferrer"  href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;ACADEMY</a>
@@ -57,9 +57,11 @@
       </div>
       <section class="competition">
         <h1 class="competition__header visually-hidden">Форма анкеты для участников</h1>
-        <p class="competition__introduction">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту!
-          <span class="competition__introduction competition__introduction--secondary">Пожалуйста, заполните форму ниже:</span>
-        </p>
+        <div class="competition__introduction-wrapper">
+          <p class="competition__introduction">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;&mdash; 1000 миль на&nbsp;вашу бонусную карту!
+            <span class="competition__introduction competition__introduction--secondary">Пожалуйста, заполните форму ниже:</span>
+          </p>
+        </div>
         <form class="competition__form form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form__user-name">
             <p class="form__text-field form__text-field--last-name">
@@ -77,38 +79,38 @@
           </div>
           <fieldset class="form__fieldset form__fieldset--achievement">
             <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-            <ul class="form__list">
+            <div class="form__list">
               <div class="form__list-column">
-                <li class="form__item">
+                <p class="form__item">
                   <input type="checkbox" class="form__checkbox-radio visually-hidden" name="selfie" id="selfie" checked>
                   <label class="form__checkbox-radio-label" for="selfie">Сделал селфи с&nbsp;акулой</label>
-                </li>
-                <li class="form__item">
+                </p>
+                <p class="form__item">
                   <input type="checkbox" class="form__checkbox-radio visually-hidden" name="sunburn" id="sunburn" checked>
                   <label class="form__checkbox-radio-label" for="sunburn">Обгорел на&nbsp;пляже</label>
-                </li>
+                </p>
               </div>
               <div class="form__list-column">
-                <li class="form__item">
+                <p class="form__item">
                   <input type="checkbox" class="form__checkbox-radio visually-hidden" name="chuck-norris" id="chuck-norris" >
                   <label class="form__checkbox-radio-label" for="chuck-norris">Видел Чака Норриса</label>
-                </li>
-                <li class="form__item">
+                </p>
+                <p class="form__item">
                   <input type="checkbox" class="form__checkbox-radio visually-hidden" name="souvenirs" id="souvenirs" >
                   <label class="form__checkbox-radio-label" for="souvenirs">Накупил сувениров</label>
-                </li>
+                </p>
               </div>
               <div class="form__list-column">
-                <li class="form__item">
+                <p class="form__item">
                   <input type="checkbox" class="form__checkbox-radio visually-hidden" name="tower" id="tower" checked>
                   <label class="form__checkbox-radio-label" for="tower">Удержал башню</label>
-                </li>
-                <li class="form__item">
+                </p>
+                <p class="form__item">
                   <input type="checkbox" class="form__checkbox-radio visually-hidden" name="hotel-crush" id="hotel-crush" checked>
                   <label class="form__checkbox-radio-label" for="hotel-crush">Разгромил отель</label>
-                </li>
+                </p>
               </div>
-            </ul>
+            </div>
           </fieldset>
           <fieldset class="form__contacts">
             <legend class="form__legend">Контактная информация</legend>
@@ -124,7 +126,7 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--app">
-            <legend class="form__legend">С каким приложением путешествовали?</legend>
+            <legend class="form__legend form__legend--fix-width">С каким приложением путешествовали?</legend>
             <ul class="form__list">
               <li class="form__item form__item--radio">
                 <input type="radio" class="form__checkbox-radio visually-hidden" name="os" id="ios" checked>

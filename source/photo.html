@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-body page-body--inner no-js">
     <header class="main-header">
@@ -62,7 +62,11 @@
           <li class="users-photo__item post post--top">
             <a class="post__photo-full-version" href="#">
               <!--width="320" height="137"-->
-              <img class="post__photo post__photo--top" src="img/panorama-mobile@1x.jpg" alt="Фотография пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img class="post__photo post__photo--top" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Фотография пользователя">
+              </picture>
             </a>
             <div class="post__content post__content--top">
               <p class="post__user"><b class="post__user-name">Анна </b><span class="post__time">(5 минут назад)</span></p>
@@ -81,7 +85,11 @@
           </li>
           <li class="users-photo__item post">
             <a class="post__photo-full-version" href="#">
-              <img class="post__photo" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+                <img class="post__photo" src="img/photo-car-mobile@1x.jpg"  srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография пользователя">
+              </picture>
             </a>
             <div class="post__content">
               <p class="post__user"><b class="post__user-name">Левон </b><span class="post__time">(5 часов назад)</span></p>
@@ -100,7 +108,11 @@
           </li>
           <li class="users-photo__item post">
             <a class="post__photo-full-version" href="#">
-              <img class="post__photo" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+                <img class="post__photo" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография пользователя">
+              </picture>
             </a>
             <div class="post__content">
               <p class="post__user"><b class="post__user-name">Антон </b><span class="post__time">(12 часов назад)</span></p>
@@ -119,7 +131,11 @@
           </li>
           <li class="users-photo__item post">
             <a class="post__photo-full-version" href="#">
-              <img class="post__photo" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+                <img class="post__photo" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография пользователя">
+              </picture>
             </a>
             <div class="post__content">
               <p class="post__user"><b class="post__user-name">Борис </b><span class="post__time">(20 часов назад)</span></p>
@@ -138,7 +154,11 @@
           </li>
           <li class="users-photo__item post">
             <a class="post__photo-full-version" href="#">
-              <img class="post__photo" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+                <img class="post__photo" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография пользователя">
+              </picture>
             </a>
             <div class="post__content">
               <p class="post__user"><b class="post__user-name">Сергей </b><span class="post__time">(25 часов назад)</span></p>
@@ -157,7 +177,11 @@
           </li>
           <li class="users-photo__item post">
             <a class="post__photo-full-version" href="#">
-              <img class="post__photo" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+                <img class="post__photo" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография пользователя">
+              </picture>
             </a>
             <div class="post__content">
               <p class="post__user"><b class="post__user-name">Максим </b><span class="post__time">(40 часов назад)</span></p>
@@ -176,7 +200,11 @@
           </li>
           <li class="users-photo__item post">
             <a class="post__photo-full-version" href="#">
-              <img class="post__photo" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография пользователя">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+                <img class="post__photo" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" width="280" height="180" alt="Фотография пользователя">
+              </picture>
             </a>
             <div class="post__content">
               <p class="post__user"><b class="post__user-name">Надежда </b><span class="post__time">(45 часов назад)</span></p>
@@ -199,7 +227,11 @@
       </section>
       <div class="new-post">
         <form class="new-post__form" action="https://echo.htmlacademy.ru" method="post">
-          <img class="new-post__photo" src="img/photo-road-mobile@1x.jpg" alt="Ваша фотография для загрузки" width="280" height="374">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+            <img class="new-post__photo" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" width="280" height="374" alt="Ваша фотография для загрузки">
+          </picture>
           <div class="new-post__wrapper">
             <div class="new-post__tools edit-tools">
               <div class ="edit-tools__tool">
