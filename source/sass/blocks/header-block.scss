@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: -66px;
-  padding-top: 66px;
+  margin-top: -70px;
+  padding-top: 70px;
   width: auto;
   background-color: $background-color-dark;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -96,6 +96,7 @@
     z-index: 2;
     margin-top: 70px;
     margin-right: 320px;
+    padding-top: 24px;
     flex-shrink: 0;
     background-color: transparent;
   }
@@ -141,7 +142,7 @@
   }
 
   .header-block__download {
-    margin-top: 40px;
+    margin-top: 45px;
     margin-right: 640px;
   }
 

@@ -8,25 +8,13 @@
   @include background-dark;
 }
 
-.js .main-header--close {
-  background-color: rgba(#283645, 0.6);
-
-  .main-header__menu-btn {
-    display: inline-block;
-  }
-
-  .main-header__nav {
-    display: none;
-  }
-}
-
 .main-header__top {
   display: flex;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 22px;
   padding-right: 20px;
-  padding-bottom: 27px;
-  padding-top: 23px;
+  padding-bottom: 24px;
+  padding-top: 22px;
 }
 
 .main-header__logo {
@@ -42,16 +30,10 @@
   margin-top: -18px;
 }
 
-.no-js {
-  .main-header__menu-btn {
-    display: none;
-  }
-}
-
-
 .main-header__menu-btn {
   @include reset-btn;
 
+  position: relative;
   margin-left: auto;
   width: 50px;
   height: 24px;
@@ -62,20 +44,75 @@
     color: #d22856;
   }
 
+  &:focus {
+    color: #d22856;
+  }
+
   &:active {
     opacity: 0.3;
   }
 }
+/*Кнопка при отключенном js*/
+.main-header--nojs .main-header__menu-btn {
+  display: none;
+}
+/*Кнопка при отктытом меню*/
+.main-header--opened .main-header__hamburger {
+  display: none;
+}
 
-.main-header__nav {
-  &--close {
-    display: none;
+.main-header--opened .main-header__menu-btn {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 24px;
+    width: 29px;
+    height: 5px;
+    background-color: #ffffff;
   }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after,
+  &:focus::before,
+  &:focus::after {
+    background-color: #d22856;
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: rgba(210, 40, 86, 0.3);
+  }
+}
+/*Закрытое меню*/
+.main-header--close {
+  background-color: rgba(40, 54, 69, 0.6);
+}
+
+.main-header--close .main-header__nav {
+  display: none;
+}
+/*Отсутсвие js*/
+.main-header--nojs {
+  background-color: rgba(40, 54, 69, 1);
+}
+
+.main-header--nojs .main-header__nav {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
   .main-header__top {
-    padding-top: 25px;
+    padding-top: 26px;
     padding-bottom: 40px;
   }
 
@@ -87,14 +124,31 @@
     margin-left: 0;
     margin-top: 0;
   }
+
+  .main-header__menu-btn {
+    height: 44px;
+  }
+  /*Кнопка при отктытом меню*/
+  .main-header--opened .main-header__menu-btn {
+    &::before,
+    &::after {
+      top: 28px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-header {
+    display: flex;
     flex-direction: row;
     padding-left: 130px;
     padding-right: 130px;
     background-color: rgba(40, 54, 69, 0.6);
+  }
+
+  .main-header--close .main-header__nav,
+  .main-header--nojs .main-header__nav {
+    display: initial;
   }
 
   .main-header__top {

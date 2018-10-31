@@ -2,12 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  flex-wrap: wrap;
+  width: 180px;
   @include reset-list;
 }
 
 .social-links__item {
-  margin-right: 15px;
+  margin-right: 11px;
 
   &:last-child {
     margin-right: 0;

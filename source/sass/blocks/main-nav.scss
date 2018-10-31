@@ -38,7 +38,7 @@
   .main-nav__list {
     min-height: 90px;
     padding-bottom: 5px;
-    padding-top: 5px;
+    padding-top: 10px;
     width: auto;
     flex-direction: row;
     justify-content: space-between;
@@ -52,12 +52,28 @@
   }
 
   .main-nav__link {
+    position: relative;
     font-weight: 400;
     text-transform: none;
+    padding-left: 0;
+    margin-left: 16px;
 
     &:last-child {
       padding-right: 0;
       box-shadow: none;
+    }
+
+    &:active {
+      &::after {
+        @include pseudo-element;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        height: 2px;
+        background-color: $background-color-white;
+      }
     }
   }
 }

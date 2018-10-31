@@ -7,7 +7,8 @@
   text-decoration: none;
   color: $link-color;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $hover-color;
     fill: $hover-color;
   }

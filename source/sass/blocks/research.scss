@@ -27,7 +27,7 @@
       content: "24";
       position: absolute;
       top: 59px;
-      left: 23px;
+      left: 21px;
       width: 238px;
       height: 276px;
       padding-top: 54px;
@@ -44,10 +44,13 @@
     margin-bottom: 10px;
     font-size: 30px;
     line-height: 1.2;
+    margin-top: 28px;
   }
 
   .research__description {
     margin-bottom: 5px;
+    margin-top: 11px;
+    padding-right: 20px;
     font-size: 14px;
     line-height: 1.71;
   }
@@ -80,8 +83,13 @@
     }
   }
 
+  .research__header {
+    margin-top: 25px;
+  }
+
   .research__description {
-    margin-top: 23px;
+    margin-top: 22px;
+    padding-right: 25px;
     margin-bottom: 27px;
     font-size: 18px;
     line-height: 1.67;

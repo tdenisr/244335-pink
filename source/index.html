@@ -14,7 +14,7 @@
       svg4everybody(); // run it now or whenever you are ready
     </script>
   </head>
-  <body class="page-body page-body--index no-js">  <!--заменить класс на "js" с помощью js -->
+  <body class="page-body page-body--index">
     <svg style="display:none">
       <symbol class="logo-icon"  viewBox="0 0 146.3 40.375" id="main-logo">
         <g class="logo-icon__text">
@@ -71,8 +71,12 @@
         <path id="c-4-1-7-3-8-4" fill="#A4C639" d="M39.198,15.679L39.198,15.679c1.595,0,2.886,1.292,2.886,2.885v12.378 c0,1.595-1.291,2.886-2.886,2.886l0,0c-1.594,0-2.885-1.291-2.885-2.886V18.564C36.313,16.97,37.604,15.679,39.198,15.679z"/>
         <path fill="#A4C639" d="M8.03,11.967h26.026c-0.039-2.783-1.234-5.322-3.187-7.275l2.446-4.235c0.082-0.146,0.031-0.331-0.112-0.415 c-0.146-0.084-0.331-0.034-0.415,0.111L30.416,4.26c-2.052-1.853-6.249-3.4-9.374-3.4l0,0c-3.016,0-7.322,1.547-9.374,3.4 L9.296,0.152C9.213,0.007,9.027-0.042,8.881,0.041C8.736,0.125,8.686,0.311,8.77,0.456l2.445,4.235 C9.265,6.645,8.068,9.184,8.03,11.967z M25.323,6.804c-0.002-0.805,0.664-1.46,1.488-1.462c0.826-0.002,1.494,0.648,1.498,1.454 c0,0.002,0,0.005,0,0.008c0.002,0.805-0.664,1.46-1.49,1.462c-0.823,0.002-1.493-0.649-1.496-1.454 C25.323,6.81,25.323,6.807,25.323,6.804z M14.18,6.804c-0.001-0.805,0.665-1.46,1.489-1.462c0.824-0.002,1.494,0.648,1.497,1.454 c0,0.002,0,0.005,0,0.008c0.002,0.805-0.664,1.46-1.488,1.462c-0.825,0.002-1.495-0.649-1.498-1.454 C14.18,6.81,14.18,6.807,14.18,6.804z"/>
       </symbol>
+      <symbol viewBox="0 0 35.983 35.983" id="icon-map-marker">
+        <circle fill="#FFFFFF" cx="17.991" cy="17.991" r="17.991"/>
+        <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866"/>
+      </symbol>
     </svg>
-    <header class="main-header main-header--close"> <!--main-header--close при закрытом меню -->
+    <header class="main-header main-header--close main-header--nojs"> <!--main-header--close при закрытом меню,  убрать класс main-header--nojs с помощью javascript-->
       <div class="main-header__top">
         <a class="main-header__logo">
           <svg class="main-header__logo-icon" width="146.3px" height="40.375px" x="0px" y="0px">
@@ -80,7 +84,7 @@
           </svg>
         </a>
         <button type="button" class="main-header__menu-btn" >
-            <svg width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007">
+            <svg class="main-header__hamburger" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007">
               <use xlink:href="#header-menu-btn"></use>
             </svg>
         </button>
@@ -97,7 +101,7 @@
             <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" target="_blank" rel="noopener noreferrer" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;ACADEMY</a>
+            <a class="main-nav__link" target="_blank" rel="noopener noreferrer" href="https://htmlacademy.ru/intensive/adaptive">HTML&nbsp;Academy</a>
           </li>
         </ul>
       </nav>
@@ -211,8 +215,8 @@
           </li>
         </ul>
         <div class="comments__switches slider-switches">
-          <button class="slider-switches__switch" type="button">1</button>
-          <button class="slider-switches__switch slider-switches__switch--active" type="button">2</button>
+          <button class="slider-switches__switch slider-switches__switch--active" type="button">1</button>
+          <button class="slider-switches__switch" type="button">2</button>
           <button class="slider-switches__switch" type="button">3</button>
         </div>
       </section>
@@ -270,14 +274,17 @@
       </section>
       <section class="contacts">
         <h2 class="contacts__header visually-hidden">Наши контакты</h2>
-        <p class="contacts__slogan">Остались вопросы?<br>Свяжитесь с нами!</p>
+        <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
         <ul class="contacts__list">
-          <li class="contacts__item"><p><b>Звоните:</b><span class="contacts__number">+7(812)555-66-66</span></p></li>
+          <li class="contacts__item"><p><b>Звоните:</b><span class="contacts__number">+7 (812) 555-66-66</span></p></li>
           <li class="contacts__item"><p><b>Пишите:</b><span class="contacts__number">mail@htmlacademy.ru</span></p></li>
           <li class="contacts__item"><p><b>Приезжайте в гости:</b><span class="contacts__number">ул. Большая Конюшенная,&nbsp;19/8</span></p></li>
         </ul>
-        <div class="contacts__map contacts__map--js">
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0907991d519d20fa991e2e5ee063e4b184eaae7d1d9c5721038ccb239c5762c5&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+        <div class="contacts__map contacts__map--nojs">
+          <svg class="contacts__map-icon" width="36px" height="35px">
+            <use xlink:href="#icon-map-marker"></use>
+          </svg>
+          <!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0907991d519d20fa991e2e5ee063e4b184eaae7d1d9c5721038ccb239c5762c5&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script> -->
         </div>
       </section>
     </main>
@@ -321,5 +328,6 @@
         </a>
       </p>
     </footer>
+    <script src="js/main-header-nav.js"></script>
   </body>
 </html>
