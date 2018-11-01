@@ -17,9 +17,11 @@
 .visually-hidden:active {
   position: absolute;
   z-index: -2;
+  opacity: 0;
 }
 
 .visually-hidden:focus {
   position: absolute;
   z-index: -2;
+  opacity: 0;
 }
