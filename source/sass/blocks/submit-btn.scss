@@ -24,4 +24,12 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
+
+  &:disabled,
+  &[disabled] {
+    cursor: default;
+    background-color: #e5e5e5;
+    color: #ffffff;
+    border: solid 2px #e5e5e5;
+  }
 }

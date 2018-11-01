@@ -16,6 +16,8 @@
   }
 
   &--inner-page {
+    margin-top: -69px;
+    padding-top: 71px;
     min-height: 169px;
     margin-bottom: 32px;
     justify-content: flex-start;
@@ -68,6 +70,8 @@
 
     &--inner-page {
       min-height: 330px;
+      background-size: 181%;
+      background-position: center top;
     }
   }
 
@@ -123,6 +127,7 @@
 
     &--inner-page {
       min-height: 243px;
+      background-size: 213%;
     }
   }
 
@@ -147,7 +152,7 @@
   }
 
   .header-block__header {
-    margin-top: 19px;
+    margin-top: 22px;
     padding-top: 0;
     line-height: 1.2;
     padding-right: 80px;

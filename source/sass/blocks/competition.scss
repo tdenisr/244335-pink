@@ -10,13 +10,13 @@
 }
 
 .competition__introduction {
-  margin-top: 12px;
-  margin-bottom: 40px;
+  margin-top: 13px;
+  margin-bottom: 35px;
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
   font-size: 14px;
-  line-height: 2.14;
+  line-height: 2.15;
   max-width: 100%;
   box-sizing: border-box;
 
@@ -31,7 +31,7 @@
 
 @media (min-width: $tablet-width) {
   .competition__introduction {
-    margin-top: 63px;
+    margin-top: 61px;
     margin-bottom: 0;
     font-size: 18px;
     padding-left: 60px;
@@ -55,10 +55,10 @@
 
 @media (min-width: $desktop-width) {
   .competition__introduction {
-    margin-top: 60px;
+    margin-top: 61px;
     margin-bottom: 52px;
-    padding-left: 190px;
-    padding-right: 190px;
+    padding-left: 200px;
+    padding-right: 200px;
 
     &--secondary {
       display: inline;

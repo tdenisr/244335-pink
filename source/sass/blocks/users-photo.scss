@@ -13,8 +13,10 @@
   text-align: center;
   font-size: 14px;
   line-height: 2.14;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   max-width: 100%;
+  margin-left: 36px;
+  margin-right: 36px;
 }
 
 .users-photo__list {
@@ -31,7 +33,7 @@
 }
 
 .users-photo__invite {
-  margin-top: 7px;
+  margin-top: 5px;
   margin-bottom: 50px;
   text-align: center;
   font-size: 14px;
@@ -51,7 +53,7 @@
     line-height: 1.7;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 40px;
+    padding-top: 41px;
     margin-bottom: 58px;
   }
 
@@ -78,9 +80,10 @@
 
 @media (min-width: $desktop-width) {
   .users-photo__introduction {
-    padding-left: 300px;
-    padding-right: 300px;
-    margin-bottom: 68px;
+    padding-left: 250px;
+    padding-right: 250px;
+    margin-bottom: 70px;
+    margin-top: 20px;
   }
 
   .users-photo__list {
@@ -95,6 +98,6 @@
   }
 
   .users-photo__invite {
-    margin-top: 5px;
+    margin-top: 0;
   }
 }

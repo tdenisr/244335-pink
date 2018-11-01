@@ -19,7 +19,7 @@
 }
 
 .form__label {
-  margin-left: 24px;
+  margin-left: 25px;
   margin-bottom: 3px;
   font-size: 14px;
   line-height: 2.14;
@@ -33,7 +33,7 @@
 }
 
 .form__input-text {
-  padding-left: 20px;
+  padding-left: 23px;
   padding-right: 20px;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -78,6 +78,14 @@
   text-align: left;
   border: none;
   background-color: $background-color-light;
+
+  &--app {
+    padding-top: 100px;
+
+    .form__legend {
+      top: 38px;
+    }
+  }
 }
 
 .form__legend {
@@ -91,6 +99,12 @@
   color: #d22856;
   text-transform: uppercase;
   text-align: center;
+
+  &--achievement {
+    top: 38px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .form__list {
@@ -154,6 +168,8 @@
   }
 
   &--radio {
+    padding-left: 69px;
+
     &::before {
       border-radius: 50%;
       background-color: $background-color-white;
@@ -175,9 +191,14 @@
   display: inline-block;
 }
 
+.form__checkbox-radio:focus + .form__checkbox-radio-label::before {
+  border: 2px solid rgba(210, 40, 86, 1);
+}
+
+
 .form__contacts {
   position: relative;
-  padding-top: 33px;
+  padding-top: 31px;
   border: none;
   padding-left: 0;
   padding-right: 0;
@@ -199,6 +220,7 @@
 
 .form__textarea {
   width: 234px;
+  max-width: 320px;
   min-height: 184px;
   padding-left: 18px;
   padding-right: 20px;
@@ -288,6 +310,7 @@
 
   .form__input-text {
     flex-grow: 1;
+    padding-left: 20px;
   }
 
   .form__input-contacts {
@@ -313,7 +336,7 @@
       order: 2;
       margin-top: 5px;
       margin-bottom: 58px;
-      padding-left: 55px;
+      padding-left: 58px;
       padding-bottom: 10px;
     }
   }
@@ -363,6 +386,7 @@
 
   .form__textarea {
     width: 456px;
+    max-width: 550px;
     min-height: 175px;
   }
 
@@ -405,6 +429,10 @@
       padding-left: 75px;
       padding-right: 0;
       margin-bottom: 65px;
+
+      .form__legend {
+        top: -12px;
+      }
     }
 
     &--achievement {
@@ -432,6 +460,12 @@
     &--fix-width {
       width: 330px;
     }
+
+    &--achievement {
+      top: -11px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
 
@@ -457,15 +491,22 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding-top: 45px;
+    flex-wrap: wrap;
+    padding-top: 43px;
     padding-bottom: 10px;
     margin-bottom: 40px;
+  }
+
+  .form__input-contacts {
+    padding-left: 16px;
+    padding-top: 10px;
   }
 
   .form__fieldset-wrapper {
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
   }
@@ -481,6 +522,7 @@
   .form__textarea {
     width: 778px;
     min-height: 108px;
+    max-width: 920px;
   }
 
   .form__btn-wrapper {
